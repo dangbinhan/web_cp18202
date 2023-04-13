@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="boxlogin">
+        <input type="text" placeholder="Nhập username">
+        <input type="text" placeholder="Nhập password"><br>
+        <button id="btnlogin">Login</button>
+    </div>
+
+    <script>
+        var btnlogin = document.getElementById("btnlogin");
+        btnlogin.addEventListener("click", logingetgo);
+
+        function logingetgo() {
+            var user = document.getElementById("boxlogin").children[0].value;
+            var pass = document.getElementById("boxlogin").children[1].value;
+            sessionStorage.setItem("user", user);
+            sessionStorage.setItem("pass", pass);
+
+            window.location.href="logined.html";
+        }
+    </script>
+</body>
+</html>

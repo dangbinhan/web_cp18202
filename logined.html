@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logined</title>
+</head>
+<body onload="checkuser()">
+   
+<div id="showkq"></div>
+<script>
+    function checkuser() {
+        var u = sessionStorage.setItem("user");
+        var p = sessionStorage.setItem("pass");
+        if(u!="")
+    }
+
+    var u = sessionStorage.getItem("user");
+    var p = sessionStorage.getItem("pass");
+    var kq = `<h1>Bạn đã login với tài khoản: </h1>
+    <h2>Tài khoản: <span>`+ u +`</span></h2>
+    <h2>Mật khẩu: <span>`+ p +`</span></h2>`;
+    document.getElementById("showkq").innerHTML = kq;
+</script>
+</body>
+</html>

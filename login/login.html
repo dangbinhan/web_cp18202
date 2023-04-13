@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Form</title>
+
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .dn input{
+            margin: 2px;
+            padding: 2px;
+        }
+        .container label{
+            display: inline-block;
+            width: 300px;
+        }
+
+        .container .dangnhap .txt {
+            width: 200px;
+        }
+    </style>
+
+    <script src="login.js"></script>
+</head>
+
+<body onload="khoitao(1)">
+    <div class="container">
+        <div class="dangnhap" id="dangnhap">
+            <h1>Đăng Nhập</h1>
+            <p>
+            <label for="">Tài Khoản: </label>
+            <input type="text" name="" id="user" class="txt" placeholder="Nhập tài khoản">
+            </p>
+
+            <p>
+            <label for="">Mật Khẩu: </label>
+            <input type="password" name="" id="pass" class="txt" placeholder="Nhập mật khẩu">
+            </p>
+            <div>
+                <button id="check" onclick="check()">Đăng Nhập</button>
+                <button onclick="loadtrang()">Đăng ký</button>
+            </div>
+        </div>
+        <div class="thanhcong" id="thanhcong">
+            <h2>Đăng Nhập Thành Công</h2>
+            <h2>Tên Đăng Nhập: <span id="showuser"></span></h2>
+            <h2>Mật Khẩu: <span id="showpass"></span></h2>
+        </div>
+        <div class="thatbai" id="thatbai">
+            <h2>Đăng Nhập Thất Bại</h2>
+            <h1>Tên Đăng Nhập hoặc Mật Khẩu Không Tồn Tại</h1>
+            <button onclick="khoitao(1)">Đăng Nhập Lại</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

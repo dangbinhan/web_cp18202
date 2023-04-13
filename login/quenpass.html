@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #frmdangky{
+            width: 40%;
+            margin: auto;
+            border: 2px solid black;
+            font-size: 22px;
+        }
+        #frmdangky label{
+            width: 150px;
+            display: inline-block;
+            color: darkblue;
+            padding-left: 20px;
+        }
+        #frmdangky .txt{
+            width: 400px;
+            border: 1px solid darkblue;
+            padding: 10px;
+        }
+
+        #frmdangky .btn-box{
+            text-align: right;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        #frmdangky .btn-box button{
+            width: 150px;
+            height: 40px;
+            font-size: 15px;
+        }
+
+        #frmdangky .btn-box button a{
+            text-decoration: none;
+            color: black;
+        }
+
+        #frmdangky h1{
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 5px solid black;
+        }
+        #frmdangky .st{
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<form action="xuly.php" id="frmdangky" method="post">
+    <h1>Quên Mật Khẩu</h1>
+    <p>
+        <label>Tên Đăng Nhập</label>
+        <input type="text" class="txt" minlength="4" maxlength="20" placeholder="Nhập 4 - 20 ký tự" name="un">
+    </p>
+    <p>
+        <label>Email</label>
+        <input type="text" class="txt" placeholder="Nhập 8-20 ký tự" name="pw" minlength="8" maxlength="20">
+    </p>
+
+    
+    <div class="btn-box">
+        <button type="submit">
+            <a href="">Tiếp Tục</a>
+        </button>
+    </div>
+</form>
+</body>

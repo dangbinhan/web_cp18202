@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Objects</h2>
+    <p>Creating an object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            tensp: "Iphone14",
+            gia: 49000000,
+            giakm: 0,
+            color: "Tím",
+            showgia: function() {
+                var kq = "";
+                if ((this.giakm > 0) && (this.giakm < 49000000)) {
+                    kq = this.giakm + " " + this.gia;
+                } else {
+                    kq = this.gia;
+                }
+                return kq;
+            }
+        };
+
+        document.getElementById("demo").innerHTML = person.showgia();
+    </script>
+
+</body>
+
+</html>
